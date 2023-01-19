@@ -1,0 +1,196 @@
+/*
+* Estilos para menú por encima
+*/
+.outer-container {
+    width: 100vw;
+    height: 100vh;
+    background-color: #0050ab36;
+    
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+/*
+* Estilos menú selección de nivel
+*/
+.inner-container {
+    height: max-content;
+    padding: 20px;
+
+    background-color: #3b95f5;
+
+    border-radius: 10px;
+    border-style: solid;
+    border-color: #3B95F5;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/*
+* Estilos de la cabecera
+*/
+.game-header {
+    display: flex;
+    justify-content: space-between;
+    min-width: 500px;
+    width: calc(100% - 60px)
+}
+
+/*
+* Estilos de los contadores (banderas, temporizador)
+*/
+.game-header img {
+    height: 2rem;
+    margin-right: 5px;
+    color: white;
+}
+
+.game-header .counter {
+    color: white;
+}
+
+.flags-counter, .time-counter{
+    align-self: center;
+    font-size: 2rem;
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+/*
+* Estilos de la botonera de nivel
+*/
+
+.levels {
+    align-self: center;
+    height: fit-content;
+    display: flex;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.level {
+    padding: 8px;
+
+    font-size: 1.2em;
+    color: #0051A8;
+
+    background-color: #3b95f549;
+    border-style: solid;
+    border-width: 3px;
+    border-collapse: collapse;
+    border-color: #0051A8;
+
+    cursor: pointer;
+}
+
+.level:hover {
+    background-color: #0051a870;
+}
+
+.level:active {
+    background-color: #0051A8;
+    color: white;
+}
+
+.easy {
+    border-radius: 10px 0 0 10px;
+}
+
+.middle {
+    border-width: 3px 0 3px 0;
+}
+
+.hard {
+    border-radius: 0 10px 10px 0;
+}
+
+.selected {
+    background-color: #0051A8;
+    color: white;
+}
+
+.selected:hover {
+    background-color: #0051A8;
+}
+
+/*
+* Estilos de la tabla
+*/
+table {
+    margin: 30px;
+}
+tr,td,table {
+    border-style: solid;
+    border-color: #0051A8;
+    border-collapse: collapse;
+    background-color: white;
+
+}
+
+td {
+    background-color: #3b95f549;
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
+}
+
+td:hover{
+    background-color: #0051a870;
+}
+
+td > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+td img {
+    height: 25px;
+}
+
+td.pulsada {
+    color: white;
+    text-align: center;
+    background-color: #0051A8;
+}
+
+/*
+* Estilos mensaje final (ganar/perder)
+*/
+.outer.endGame {
+    visibility: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background-color: #06305fc5;
+    margin: 0;
+    
+    font-size: 10rem;
+    color:  #fb9354;
+    font-weight: bold;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+td.lost {
+    background-color: #e75656d0;
+}

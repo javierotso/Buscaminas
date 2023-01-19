@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/app.js"></script>
+    <title>Buscaminas</title>
+</head>
+
+<body>
+
+    <body>
+        <div class="outer-container">
+            <h1><img src="assets/images/logo.png" alt="Buscaminas"></h1>
+            <div class="inner-container">
+                <div class="game-header">
+                    <div class="levels">
+                        <div class="easy level">Principiante</div>
+                        <div class="middle level selected">Medio</div>
+                        <div class="hard level">Difícil</div>
+                    </div>
+                    <div class="flags-counter">
+                        <img src="assets/images/bandera.png" alt="bandera" >
+                        <span id="flagsCounter" class="counter">20</span>
+                    </div>
+                    <div class="time-counter">
+                        <img src="assets/images/cronometro.png" alt="cronometro" >
+                        <span id="timeCounter" class="counter">0</span>
+                    </div>
+                </div>
+
+                <div class="game-body">
+                    <table>
+                        <tbody id="tbody"></tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="outer endGame" id="endGame"></div>
+    </body>
+
+</html>
